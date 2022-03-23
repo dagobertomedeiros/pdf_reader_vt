@@ -46,7 +46,7 @@ function read_pdf_balance_value (str_local_file){
             data.text = data.text.replace(remove_head_2, '');
             data.text = data.text.replace(remove_head_3, '');
             company.company_id = data.text.slice(10, 20);
-            company.company_name = data.text.slice(21, data.text.indexOf('Tipo  de  Utilização'));
+            company.company_name = data.text.slice(21, data.text.indexOf('Tipo  de  Utilização')-1);
             data.text = data.text.slice(data.text.indexOf('Cartão:'), data.text.length-1);
             var i = 0;
                 

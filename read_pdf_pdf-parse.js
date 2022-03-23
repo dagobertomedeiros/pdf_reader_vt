@@ -30,7 +30,6 @@ var company = new Company();
 read_pdf_balance_value(str_local_file);
 
 function read_pdf_balance_value (str_local_file){
-    console.log(str_local_file);
     const fs = require('fs');
     const pdf = require('pdf-parse');
     const { isNumberObject } = require('util/types');
